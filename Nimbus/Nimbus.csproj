@@ -23,7 +23,6 @@
 
     <ItemGroup>
       <Folder Include="Nimbus\Controllers\" />
-      <Folder Include="Nimbus\Domain\Models\" />
       <Folder Include="Nimbus\Domain\Repositories\" />
       <Folder Include="Nimbus\Domain\Services\" />
       <Folder Include="Nimbus\Mapping\" />
@@ -32,7 +31,6 @@
       <Folder Include="Nimbus\Services\" />
       <Folder Include="Security\Authorization\" />
       <Folder Include="Security\Controllers\" />
-      <Folder Include="Security\Domain\Models\" />
       <Folder Include="Security\Domain\Repositories\" />
       <Folder Include="Security\Domain\Services\" />
       <Folder Include="Security\Exceptions\" />
