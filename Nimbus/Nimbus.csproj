@@ -22,22 +22,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Nimbus\Controllers\" />
-      <Folder Include="Nimbus\Domain\Repositories\" />
-      <Folder Include="Nimbus\Domain\Services\" />
-      <Folder Include="Nimbus\Mapping\" />
+      <Folder Include="Nimbus\Domain\Repositories\test\" />
       <Folder Include="Nimbus\Persistence\Repositories\" />
-      <Folder Include="Nimbus\Resources\" />
-      <Folder Include="Nimbus\Services\" />
-      <Folder Include="Security\Authorization\" />
-      <Folder Include="Security\Controllers\" />
       <Folder Include="Security\Domain\Repositories\" />
       <Folder Include="Security\Domain\Services\" />
-      <Folder Include="Security\Exceptions\" />
-      <Folder Include="Security\Mapping\" />
       <Folder Include="Security\Persistence\Repositories\" />
-      <Folder Include="Security\Resources\" />
-      <Folder Include="Security\Services\" />
     </ItemGroup>
 
 </Project>
