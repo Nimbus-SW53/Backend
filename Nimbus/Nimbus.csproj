@@ -23,7 +23,6 @@
 
     <ItemGroup>
       <Folder Include="Nimbus\Domain\Repositories\test\" />
-      <Folder Include="Nimbus\Persistence\Repositories\" />
       <Folder Include="Security\Domain\Repositories\" />
       <Folder Include="Security\Domain\Services\" />
       <Folder Include="Security\Persistence\Repositories\" />
