@@ -53,12 +53,16 @@ public class AppDbContext : DbContext
         builder.Entity<Product>().Property(p => p.Price).IsRequired();
         builder.Entity<Product>().Property(p => p.Description).IsRequired().HasMaxLength(500);
         builder.Entity<Product>().Property(p => p.UrlImagePreview).IsRequired();
+        builder.Entity<Product>().Property(p => p.DateCreate).HasDefaultValue(DateTime.Now);
+
         
         //Configurar la tabla Provider
         builder.Entity<Proveedores>().ToTable("Provider");
         builder.Entity<Proveedores>().HasKey(p => p.ProveedorId); 
         builder.Entity<Proveedores>().Property(p => p.Name).IsRequired().HasMaxLength(90);
         builder.Entity<Proveedores>().Property(p => p.urlLogo).IsRequired();
+        builder.Entity<Proveedores>().Property(p => p.DateCreate).HasDefaultValue(DateTime.Now);
+
         
         //Configurar la tabla Category
         builder.Entity<Category>().ToTable("Category");

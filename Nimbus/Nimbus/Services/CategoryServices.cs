@@ -24,7 +24,7 @@ public class CategoryServices:ICategoryService
     {
         return await _categoryRepository.ListAsync();
     }
-   /* public async Task<CategoryResponse> SaveAsync(Category category)
+   public async Task<CategoryResponse> SaveAsync(Category category)
     {
         try
         {
@@ -42,10 +42,22 @@ public class CategoryServices:ICategoryService
                 category.DateUpdate = DateTime.UtcNow;
             }
 
-            // Luego, guarda la categoría utilizando el repositorio
-            await _categoryRepository.AddAsync(category);
+            // Asigna el título y la descripción
+            string title = category.Title;
+            string description = category.Description;
+            
+            if (category.Id > 0)
+            {
+                _categoryRepository.Update(category); // Actualizar si ya existe
+            }
+            else
+            {
+                await _categoryRepository.AddAsync(category); // Agregar si es nuevo
+            }
+            
             await _unitOfWork.CompleteAsync(); // Asegúrate de tener _unitOfWork configurado en tu clase
 
+            // Puedes devolver la respuesta con la categoría guardada
             return new CategoryResponse(category);
         }
         catch (Exception e)
@@ -53,7 +65,7 @@ public class CategoryServices:ICategoryService
             // Maneja cualquier error que pueda ocurrir durante el proceso de guardado
             return new CategoryResponse($"An error occurred while saving the category: {e.Message}");
         }
-    }*/
+    }
 
     public async Task<Category> FindByIdAsync(int categoryId)
     {
@@ -106,6 +118,7 @@ public class CategoryServices:ICategoryService
         return await _categoryRepository.FindByNameAsync(categoryName);
     }
     
+
     private T UpdateIfValid<T>(T existingValue, T newValue)
     {
         if (IsValidForUpdate(newValue))

@@ -27,4 +27,14 @@ public class ProductRepository: BaseRepository, IProductRepository
     {
         throw new NotImplementedException();
     }
+
+    public void Update(Product product)
+    {
+        _context.Products.Update(product);
+    }
+
+    public async Task AddAsync(Product product)
+    {
+        await _context.Products.AddAsync(product);
+    }
 }

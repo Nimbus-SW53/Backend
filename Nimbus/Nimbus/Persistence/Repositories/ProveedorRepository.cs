@@ -17,4 +17,14 @@ public class ProveedorRepository:BaseRepository,IProveedorRepository
     {
         return await _context.proveedores.ToListAsync();
     }
+
+    public void Update(Proveedores proveedores)
+    {
+        _context.proveedores.Update(proveedores);
+    }
+
+    public async Task AddAsync(Proveedores proveedores)
+    {
+        await _context.proveedores.AddAsync(proveedores);
+    }
 }

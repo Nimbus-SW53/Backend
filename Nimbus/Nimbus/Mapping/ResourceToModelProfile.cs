@@ -12,6 +12,7 @@ public class ResourceToModelProfile : Profile
     public ResourceToModelProfile()
     {
         CreateMap<SaveCategoryResource, Category>();
-     
+        CreateMap<SaveProveedoresResource, Proveedores>();
+        CreateMap<SaveProductResource, Product>();
     }
 }

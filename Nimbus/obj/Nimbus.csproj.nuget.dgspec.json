@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj": {}
+    "C:\\Users\\YASPER\\OneDrive - Universidad Peruana de Ciencias\\Pictures\\YasperShadow\\Active Recall\\6 Cycle\\Web Applications\\nimbus-back\\Nimbus\\Nimbus.csproj": {}
   },
   "projects": {
-    "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj": {
+    "C:\\Users\\YASPER\\OneDrive - Universidad Peruana de Ciencias\\Pictures\\YasperShadow\\Active Recall\\6 Cycle\\Web Applications\\nimbus-back\\Nimbus\\Nimbus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj",
+        "projectUniqueName": "C:\\Users\\YASPER\\OneDrive - Universidad Peruana de Ciencias\\Pictures\\YasperShadow\\Active Recall\\6 Cycle\\Web Applications\\nimbus-back\\Nimbus\\Nimbus.csproj",
         "projectName": "Nimbus",
-        "projectPath": "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\obj\\",
+        "projectPath": "C:\\Users\\YASPER\\OneDrive - Universidad Peruana de Ciencias\\Pictures\\YasperShadow\\Active Recall\\6 Cycle\\Web Applications\\nimbus-back\\Nimbus\\Nimbus.csproj",
+        "packagesPath": "C:\\Users\\YASPER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\YASPER\\OneDrive - Universidad Peruana de Ciencias\\Pictures\\YasperShadow\\Active Recall\\6 Cycle\\Web Applications\\nimbus-back\\Nimbus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\YASPER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,11 +62,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.0-preview.3.23174.2, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.0-preview.3.23174.2, )"
             },
             "Microsoft.EntityFrameworkCore.Relational.Design": {
               "target": "Package",
