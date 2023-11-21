@@ -77,5 +77,28 @@ public class CategoryControllers:ControllerBase
         var categoriaResource = _mapper.Map<Category, CategoryResource>(result.Resource);
         return Ok(categoriaResource);
     }
+    
+    
+    [HttpPost]
+    public async Task<IActionResult> PostAsync([FromBody] SaveCategoryResource resource)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState.GetErrorMessages());
+        }
+
+        var category = _mapper.Map<SaveCategoryResource, Category>(resource);
+
+        var results = await _categoryService.SaveAsync(category);
+
+        if (!results.Success)
+        {
+            return BadRequest(results.Message);
+        }
+
+        var productResource = _mapper.Map<Category, CategoryResource>(results.Resource);
+
+        return Ok(productResource);
+    }
 
 }

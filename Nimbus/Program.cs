@@ -1,7 +1,9 @@
 using AutoYa_Backend.AutoYa.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Nimbus.Nimbus.Domain.Repositories;
+using Nimbus.Nimbus.Domain.Services;
 using Nimbus.Nimbus.Persistence.Repositories;
+using Nimbus.Nimbus.Services;
 using Nimbus.Shared.Persistance.Contexts;
 using Nimbus.Shared.Persistance.Repositories;
 
@@ -40,8 +42,13 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProveedorRepository, ProveedorRepository>();
 
+builder.Services.AddScoped<IProveedorService, ProveedorServices>();
+builder.Services.AddScoped<ICategoryService, CategoryServices>();
+builder.Services.AddScoped<IProductService, ProductServices>();
 
 //AutoMapper Configuration
+
+
 
 builder.Services.AddAutoMapper(
 
