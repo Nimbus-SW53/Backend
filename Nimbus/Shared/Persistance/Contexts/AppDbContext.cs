@@ -41,10 +41,6 @@ public class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-        
-
-        
-        
         //Configurar la tabla Products
 
         builder.Entity<Product>().ToTable("Product");
@@ -53,6 +49,10 @@ public class AppDbContext : DbContext
         builder.Entity<Product>().Property(p => p.Price).IsRequired();
         builder.Entity<Product>().Property(p => p.Description).IsRequired().HasMaxLength(500);
         builder.Entity<Product>().Property(p => p.UrlImagePreview).IsRequired();
+        builder.Entity<Product>()
+            .HasOne(a => a.Category)
+            .WithMany()
+            .HasForeignKey(a => a.CategoryId).IsRequired();
         builder.Entity<Product>().Property(p => p.DateCreate).HasDefaultValue(DateTime.Now);
 
         
