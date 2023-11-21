@@ -12,9 +12,10 @@ public class ProveedorServices:IProveedorService
     private readonly IProveedorRepository _proveedorRepository;
     private readonly IUnitOfWork _unitOfWork;
 
-    public ProveedorServices(IProveedorRepository proveedorRepository)
+    public ProveedorServices(IProveedorRepository proveedorRepository, IUnitOfWork unitOfWork)
     {
         _proveedorRepository = proveedorRepository;
+        _unitOfWork = unitOfWork;
     }
 
     public async Task<IEnumerable<Proveedores>> ListAsync()

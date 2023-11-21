@@ -7,6 +7,6 @@ public class SaveProductResource
     public string Description { get; set; }
     public string UrlImagePreview{ get; set; }
     public DateTime DateCreate { get; set; }
-
+    public int CategoryId { get; set;} 
     public DateTime? DateUpdate { get; set; }
 }
