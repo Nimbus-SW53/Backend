@@ -1,6 +1,6 @@
 ﻿
-using AutoYa_Backend.Shared.Persistence.Contexts;
-using AutoYa_Backend.Shared.Persistence.Repositories;
+using Nimbus.Shared.Persistance.Contexts;
+using Nimbus.Shared.Persistance.Repositories;
 
 namespace AutoYa_Backend.AutoYa.Persistence.Repositories;
 

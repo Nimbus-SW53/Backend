@@ -1,12 +1,9 @@
-﻿using AutoYa_Backend.Shared.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Nimbus.Nimbus.Domain.Models;
+using Nimbus.Shared.Extensions;
 
-namespace AutoYa_Backend.Shared.Persistence.Contexts;
+namespace Nimbus.Shared.Persistance.Contexts;
 
-/// <summary>
-/// Representa el contexto de la aplicación que interactúa con la base de datos.
-/// </summary>
 public class AppDbContext : DbContext
 {
     /// <summary>

@@ -1,10 +1,7 @@
-﻿using AutoYa_Backend.Shared.Persistence.Contexts;
+﻿using Nimbus.Shared.Persistance.Contexts;
 
-namespace AutoYa_Backend.Shared.Persistence.Repositories;
+namespace Nimbus.Shared.Persistance.Repositories;
 
-/// <summary>
-/// Clase base que representa un repositorio.
-/// </summary>
 public class BaseRepository
 {
     /// <summary>

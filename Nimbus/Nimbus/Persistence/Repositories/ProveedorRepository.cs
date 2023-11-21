@@ -1,8 +1,9 @@
-using AutoYa_Backend.Shared.Persistence.Contexts;
-using AutoYa_Backend.Shared.Persistence.Repositories;
+
 using Microsoft.EntityFrameworkCore;
 using Nimbus.Nimbus.Domain.Models;
 using Nimbus.Nimbus.Domain.Repositories;
+using Nimbus.Shared.Persistance.Contexts;
+using Nimbus.Shared.Persistance.Repositories;
 
 namespace Nimbus.Nimbus.Persistence.Repositories;
 

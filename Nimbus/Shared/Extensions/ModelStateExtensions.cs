@@ -1,11 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace AutoYa_Backend.Shared.Extensions;
+namespace Nimbus.Shared.Extensions;
 
-
-/// <summary>
-/// Clase de extensión para el ModelStateDictionary.
-/// </summary>
 public static class ModelStateExtensions
 {
     /// <summary>

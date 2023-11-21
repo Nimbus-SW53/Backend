@@ -1,8 +1,5 @@
-﻿namespace AutoYa_Backend.Shared.Domain.Services.Communication;
+namespace Nimbus.Shared.Domain.Services.Communication;
 
-/// <summary>
-/// Clase base abstracta que representa una respuesta.
-/// </summary>
 public abstract class BaseResponse<T>
 {
     /// <summary>

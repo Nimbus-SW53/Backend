@@ -1,8 +1,5 @@
-﻿namespace AutoYa_Backend.Shared.Extensions;
+﻿namespace Nimbus.Shared.Extensions;
 
-/// <summary>
-/// Clase de extensión para cadenas de texto.
-/// </summary>
 public static class StringExtensions
 {
     /// <summary>

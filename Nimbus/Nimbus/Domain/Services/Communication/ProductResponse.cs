@@ -1,5 +1,7 @@
-﻿using AutoYa_Backend.Shared.Domain.Services.Communication;
+﻿
 using Nimbus.Nimbus.Domain.Models;
+using Nimbus.Shared.Domain.Services.Communication;
+
 namespace Nimbus.Nimbus.Domain.Services.Communication;
 
 public class ProductResponse : BaseResponse<Product>

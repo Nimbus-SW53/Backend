@@ -1,8 +1,5 @@
-﻿namespace AutoYa_Backend.Shared.Persistence.Repositories;
+namespace Nimbus.Shared.Persistance.Repositories;
 
-/// <summary>
-/// Interfaz que define los métodos para una unidad de trabajo.
-/// </summary>
 public interface IUnitOfWork
 {
     /// <summary>

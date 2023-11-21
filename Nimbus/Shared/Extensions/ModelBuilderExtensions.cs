@@ -1,10 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace AutoYa_Backend.Shared.Extensions;
+namespace Nimbus.Shared.Extensions;
 
-/// <summary>
-/// Clase de extensión para el ModelBuilder.
-/// </summary>
 public static class ModelBuilderExtensions
 {
     /// <summary>
