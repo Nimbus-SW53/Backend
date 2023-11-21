@@ -8,6 +8,8 @@ using Nimbus.Shared.Extensions;
 
 namespace Nimbus.Nimbus.Controllers;
 
+
+
 [ApiController]
 [Route("/api/v1/[controller]")]
 public class CategoryControllers:ControllerBase
@@ -21,6 +23,9 @@ public class CategoryControllers:ControllerBase
         _mapper = mapper;
     }
 
+    /// <summary>
+    ///  Get all Category 
+    /// </summary>
     [HttpGet]
     public async Task<IEnumerable<CategoryResource>> GetAllAsync()
     {
@@ -30,7 +35,10 @@ public class CategoryControllers:ControllerBase
 
         return resources;
     }
-
+    
+    /// <summary>
+    ///  Get all Category with name 
+    /// </summary>
 
     [HttpGet("{categoryName}")]
     public async Task<IEnumerable<CategoryResource>> GetByName(string categoriName)
@@ -41,6 +49,10 @@ public class CategoryControllers:ControllerBase
 
         return resources;
     }
+    
+    /// <summary>
+    ///  Put all Category with id
+    /// </summary>
 
     [HttpPut("{categoryId}")]
     public async Task<ActionResult<CategoryResponse>> UpdateCategory(int categoryId,
@@ -63,8 +75,10 @@ public class CategoryControllers:ControllerBase
 
         return Ok(categoriaResource);
     }
-
-
+    
+    /// <summary>
+    ///  Delete all Category with id 
+    /// </summary>
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAsync(int id)
     {
@@ -79,6 +93,13 @@ public class CategoryControllers:ControllerBase
     }
     
     
+    // POST: api/Category
+    /// <summary>
+    /// Create a new category.
+    /// </summary>
+    /// <response code="200">Returns newly created category.</response>
+    /// <response code="400">If the category is null or the required fields are empty</response>
+    /// <response code="500">Unexpected error, maybe database is down</response>
     [HttpPost]
     public async Task<IActionResult> PostAsync([FromBody] SaveCategoryResource resource)
     {

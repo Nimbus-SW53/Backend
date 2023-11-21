@@ -142,3 +142,5 @@ F:\Documentos\Aplicaciones Web\Backend\Nimbus\obj\Debug\net8.0\refint\Nimbus.dll
 F:\Documentos\Aplicaciones Web\Backend\Nimbus\obj\Debug\net8.0\Nimbus.pdb
 F:\Documentos\Aplicaciones Web\Backend\Nimbus\obj\Debug\net8.0\Nimbus.genruntimeconfig.cache
 F:\Documentos\Aplicaciones Web\Backend\Nimbus\obj\Debug\net8.0\ref\Nimbus.dll
+F:\Documentos\Aplicaciones Web\Backend\Nimbus\bin\Debug\net8.0\Nimbus.xml
+F:\Documentos\Aplicaciones Web\Backend\Nimbus\obj\Debug\net8.0\Nimbus.xml
