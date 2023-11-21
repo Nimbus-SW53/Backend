@@ -10,18 +10,18 @@ public class ProductServices: IProductService
 {
     private readonly IProductRepository _productRepository;
     private readonly IUnitOfWork _unitOfWork;
-    public Task<IEnumerable<Product>> ListAsync()
+    public async Task<IEnumerable<Product>> ListAsync()
     {
-        throw new NotImplementedException();
+        return await _productRepository.ListAsync();
     }
 
-    public Task<IEnumerable<Product>> ListByCategoryIdAsync(int categoryId)
+    public async Task<IEnumerable<Product>> ListByCategoryIdAsync(int categoryId)
     {
-        throw new NotImplementedException();
+        return await _productRepository.FindByCategoryIdAsync(categoryId);
     }
 
-    public Task<ProductResponse> SaveAsync(Product alquiler)
+    /*public async Task<ProductResponse> SaveAsync(Product alquiler)
     {
-        throw new NotImplementedException();
-    }
+        return await _productRepository.;
+    }*/
 }

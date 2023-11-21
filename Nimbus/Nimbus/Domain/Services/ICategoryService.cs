@@ -17,13 +17,13 @@ public interface ICategoryService
     /// Guarda una nueva categoría.
     /// </summary>
     /// <param name="category">Instancia de Categoría a guardar.</param>
-    Task<CategoryResponse> SaveAsync(Category category);
+    //Task<CategoryResponse> SaveAsync(Category category);
 
     /// <summary>
     /// Obtiene una categoría por su identificador único.
     /// </summary>
     /// <param name="categoryId">Identificador de la categoría a obtener.</param>
-    Task<CategoryResponse> GetByIdAsync(int categoryId);
+    Task<Category> FindByIdAsync(int categoryId);
 
     /// <summary>
     /// Actualiza la información de una categoría existente.

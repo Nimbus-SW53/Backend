@@ -8,11 +8,8 @@ public interface ICategoryRepository
     /// Obtiene todas las categorías en el sistema.
     /// </summary>
     Task<IEnumerable<Category>> ListAsync();
-
-
-
-  
-
+    
+    
     /// <summary>
     /// Agrega una nueva categoría al sistema.
     /// </summary>

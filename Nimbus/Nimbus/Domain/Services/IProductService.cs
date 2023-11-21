@@ -19,5 +19,5 @@ public interface IProductService
     /// Guarda un nuevo producto.
     /// </summary>
     /// <param name="alquiler">Instancia de Producto a guardar.</param>
-    Task<ProductResponse> SaveAsync(Product alquiler);
+   // Task<ProductResponse> SaveAsync(Product alquiler);
 }
