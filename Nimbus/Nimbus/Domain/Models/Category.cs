@@ -10,7 +10,7 @@ public class Category
 
     public DateTime? DateUpdate { get; set; }
 
-    private List<Proveedores> _proveedores { get; set; }
+    private List<Product> _proveedores { get; set; }
 
 }
 

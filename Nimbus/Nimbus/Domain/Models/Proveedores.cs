@@ -9,6 +9,4 @@ public class Proveedores
     public string urlLogo { get; set; }
     
     
-
-
 }
