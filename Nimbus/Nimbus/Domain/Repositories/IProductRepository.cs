@@ -17,4 +17,9 @@ public interface IProductRepository
     /// Busca productos asociados a una categoria específica.
     /// </summary>
     Task<IEnumerable<Product>> FindByCategoryIdAsync(int categoryId);
+
+    void Update(Product product);
+
+
+    Task AddAsync(Product product);
 }

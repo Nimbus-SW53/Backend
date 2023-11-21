@@ -8,5 +8,8 @@ public class Proveedores
 
     public string urlLogo { get; set; }
     
+    public DateTime DateCreate { get; set; }
+
+    public DateTime? DateUpdate { get; set; }
     
 }

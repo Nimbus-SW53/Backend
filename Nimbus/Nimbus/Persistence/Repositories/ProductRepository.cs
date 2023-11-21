@@ -18,13 +18,23 @@ public class ProductRepository: BaseRepository, IProductRepository
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<Product>> ListAsync()
+    public async Task<IEnumerable<Product>> ListAsync()
     {
-        throw new NotImplementedException();
+        return await _context.Products.ToListAsync();
     }
 
     public Task<IEnumerable<Product>> FindByCategoryIdAsync(int categoryId)
     {
         throw new NotImplementedException();
+    }
+
+    public void Update(Product product)
+    {
+        _context.Products.Update(product);
+    }
+
+    public async Task AddAsync(Product product)
+    {
+        await _context.Products.AddAsync(product);
     }
 }
