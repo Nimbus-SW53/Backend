@@ -20,7 +20,10 @@ public class ProveedoresControllers:ControllerBase
         _proveedorService = proveedorService;
         _mapper = mapper;
     }
-
+    
+    /// <summary>
+    ///  Get all Proveedores 
+    /// </summary>
     [HttpGet]
     public async Task<IEnumerable<ProveedorResource>> GetAllAsync()
     {
@@ -29,7 +32,13 @@ public class ProveedoresControllers:ControllerBase
 
         return resources;
     }
-    
+    // POST: api/Proveedores
+    /// <summary>
+    /// Create a new Proveedores.
+    /// </summary>
+    /// <response code="200">Returns newly created Proveedores.</response>
+    /// <response code="400">If the Proveedores is null or the required fields are empty</response>
+    /// <response code="500">Unexpected error, maybe database is down</response>
     [HttpPost]
     public async Task<IActionResult> PostAsync([FromBody] SaveProveedoresResource  resource)
     {

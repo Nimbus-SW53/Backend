@@ -19,7 +19,9 @@ public class ProductControllers:ControllerBase
         _productService = productService;
         _mapper = mapper;
     }
-
+    /// <summary>
+    ///  Get all Product 
+    /// </summary>
     [HttpGet]
     public async Task<IEnumerable<ProductResource>> GetAllAsync()
     {
@@ -29,7 +31,10 @@ public class ProductControllers:ControllerBase
         return resources;
     }
 
-
+    
+    /// <summary>
+    ///  Get all Product with id 
+    /// </summary>
     [HttpGet("{id}")]
     public async Task<IEnumerable<ProductResource>> ListByCategoryIdAsync(int categoryId)
     {
@@ -37,6 +42,14 @@ public class ProductControllers:ControllerBase
         var resources = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductResource>>(producto);
         return resources;
     }
+    
+    // POST: api/Product
+    /// <summary>
+    /// Create a new Product.
+    /// </summary>
+    /// <response code="200">Returns newly created product.</response>
+    /// <response code="400">If the product is null or the required fields are empty</response>
+    /// <response code="500">Unexpected error, maybe database is down</response>
 
     [HttpPost]
     public async Task<IActionResult> PostAsync([FromBody] SaveProductResource resource)
