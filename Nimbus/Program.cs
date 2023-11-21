@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen();
 
 
 
-//ADD Database Connection
+//ADD Database Connection MYSQL
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(
