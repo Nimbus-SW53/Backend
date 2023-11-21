@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\Nimbus.props" />
+  <Import Project="../build/Nimbus.props" />
 </Project>

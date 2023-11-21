@@ -11,7 +11,7 @@ public class Category
     public DateTime? DateUpdate { get; set; }
 
     private List<Product> _proveedores { get; set; }
-
+    public List<Product> Proveedores { get; set; }
 }
 
 

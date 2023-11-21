@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj": {}
+    "/Users/gae/RiderProjects/Backend/Nimbus/Nimbus.csproj": {}
   },
   "projects": {
-    "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj": {
+    "/Users/gae/RiderProjects/Backend/Nimbus/Nimbus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj",
+        "projectUniqueName": "/Users/gae/RiderProjects/Backend/Nimbus/Nimbus.csproj",
         "projectName": "Nimbus",
-        "projectPath": "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\Nimbus.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Documentos\\Aplicaciones Web\\Backend\\Nimbus\\obj\\",
+        "projectPath": "/Users/gae/RiderProjects/Backend/Nimbus/Nimbus.csproj",
+        "packagesPath": "/Users/gae/.nuget/packages/",
+        "outputPath": "/Users/gae/RiderProjects/Backend/Nimbus/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/gae/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[1.1.6, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
+            },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -102,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
