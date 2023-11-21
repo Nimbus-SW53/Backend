@@ -10,10 +10,7 @@ public interface ICategoryService
     /// </summary>
     Task<IEnumerable<Category>> ListAsync();
 
-    /// <summary>
-    /// Obtienes las categorias asociadas a un Proveedor (posible implementacion)
-    /// </summary>
-    Task<IEnumerable<Category>> ListByProveedorIdAsync(int proveedorId);
+  
     
 
     /// <summary>
@@ -40,4 +37,10 @@ public interface ICategoryService
     /// </summary>
     /// <param name="categoryId">Identificador de la categoría a eliminar.</param>
     Task<CategoryResponse> DeleteAsync(int categoryId);
+    
+    
+    /// <summary>
+    /// Busca categorías por su nombre.
+    /// </summary>
+    Task<IEnumerable<Category>> FindByNameAsync(string categoryName);
 } 

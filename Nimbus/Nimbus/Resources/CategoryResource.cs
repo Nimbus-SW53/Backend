@@ -1,6 +1,6 @@
-﻿namespace Nimbus.Nimbus.Domain.Models;
+﻿namespace Nimbus.Nimbus.Resources;
 
-public class Category 
+public class CategoryResource
 {
     public int Id { get; set; }
     public string Title { get; set; }
@@ -9,9 +9,4 @@ public class Category
     public DateTime DateCreate { get; set; }
 
     public DateTime? DateUpdate { get; set; }
-
-    private List<Proveedores> _proveedores { get; set; }
-
 }
-
-

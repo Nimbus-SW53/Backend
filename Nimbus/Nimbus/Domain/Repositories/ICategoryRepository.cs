@@ -9,6 +9,10 @@ public interface ICategoryRepository
     /// </summary>
     Task<IEnumerable<Category>> ListAsync();
 
+
+
+  
+
     /// <summary>
     /// Agrega una nueva categoría al sistema.
     /// </summary>
@@ -30,8 +34,7 @@ public interface ICategoryRepository
     void Remove(Category category);
     
     /// <summary>
-    /// Busca categorias asociados a un proveedor específico.
+    /// Busca categoria por su nombre.
     /// </summary>
-    Task<IEnumerable<Category>> FindByProveedorIdAsync(int proveedorId);
-
+    Task<IEnumerable<Category>> FindByNameAsync(string categoryName);
 }
